@@ -1,0 +1,13 @@
+$mainColor: #46b1de;
+
+@mixin triangle($width, $color) {
+    position: absolute;
+    max-width: $width;
+    border-top: $width solid $color;
+    border-right: $width solid transparent;
+    border-left: $width solid transparent;
+}
+
+.triangle {
+    @include triangle(50px, $mainColor);
+}
